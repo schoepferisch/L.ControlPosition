@@ -37,11 +37,11 @@ L.ControlPosition = L.Map.include({
     // Returns `true` if the given position is currently added to the map.
     hasCorner: function(pos) {
         var corner = this._controlCorners[pos];
-        return (corner) ? true : false; // get corner: true/false
+        return (corner) ? true : false;
     },
 
-    // @method getCorner(pos: String): DIV
-    // Returns the cornerDIV with the given position.
+    // @method getCorner(pos: String): String
+    // Returns a string containing HTML of the corner with the given position.
     getCorner: function(pos) {
         var corner = this._controlCorners[pos];
         return (typeof corner !== 'undefined') ? corner : undefined;
@@ -67,7 +67,7 @@ L.ControlPosition = L.Map.include({
     hasControlAtCorner: function(pos) {
         var corner = this._controlCorners[pos];
         if (typeof corner !== 'undefined')
-            return !!corner && ((corner.firstChild) ? true : false); // has control at corner: true/false
+            return !!corner && ((corner.firstChild) ? true : false);
         return undefined;
     }
 });
