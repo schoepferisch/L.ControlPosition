@@ -1,0 +1,32 @@
+.leaflet-center {
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.leaflet-middle {
+    position: absolute;
+    z-index: 1000;
+    pointer-events: none;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.leaflet-center .leaflet-middle {
+    transform: translate(-50%, -50%);
+}
+
+.leaflet-left .leaflet-control {
+    margin-left: 0px !important;
+}
+
+.leaflet-right .leaflet-control {
+    margin-right: 0px !important;
+}
+
+.leaflet-top .leaflet-control {
+    margin-top: 0px !important;
+}
+
+.leaflet-bottom .leaflet-control {
+    margin-bottom: 0px !important;
+}
