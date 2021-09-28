@@ -13,6 +13,8 @@
         topcustomy, bottomcustomy, middlecustomy
 ```
 
+![L.ControlPosition](https://github.com/schoepferisch/L.ControlPosition/raw/main/L.ControlPosition.PNG "Control position customization")
+
 ## Motivation
 >Tired writing the same code in different projects. I found an example of L.Map.include on stackoverflow and extended it by some useful methods. 
 
